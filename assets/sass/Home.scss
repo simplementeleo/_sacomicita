@@ -1,0 +1,69 @@
+*{
+    transition: all ease-in-out .2s;
+}
+body {
+    scroll-behavior: smooth;
+    // font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    
+
+    header {
+        height: 100vh;
+        background: #f6fafd;
+        background-image: url('../img/Home.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+        z-index: 1;
+        @media (max-width: $md){
+            background-position: center;
+        }
+        img {
+            position: absolute;
+            &.point:nth-child(1){
+                left: 0;
+                top: 50px;
+                width: 10%;
+                opacity: 0.1;
+                
+            }
+            &.point:nth-child(2){
+                right: 0;
+                width: 20%;
+                bottom: 0; 
+            }
+        }
+        nav {
+            background: transparent;
+            a {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: 'Candal', sans-serif;
+                font-weight: bold;
+                color: $color-font-main !important;
+                &.btn-register{
+                    background: #e6eeff;
+                    color: $color-font-main !important;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        section {
+            // background: #000;
+            margin-top: 100px;
+            @media (max-width: $md){
+                margin-top: 20px;
+            }
+            h1{
+                color: $color-font-main;
+                font-family: 'PT Sans', sans-serif;
+                font-size: 5em;
+            }
+            p {
+                font-size: 1.3em;
+                font-family: 'Nunito', sans-serif;
+            }
+        }
+    }
+}
