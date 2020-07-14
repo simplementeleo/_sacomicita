@@ -1,11 +1,15 @@
+@import './Variables.scss';
+@import './Fonts.scss';
 *{
     transition: all ease-in-out .2s;
 }
+html {
+    background: red;
+}
 body {
     scroll-behavior: smooth;
-    // font-family: 'PT Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
-    
+    background: $bg-main;
 
     header {
         height: 100vh;
@@ -59,10 +63,31 @@ body {
                 color: $color-font-main;
                 font-family: 'PT Sans', sans-serif;
                 font-size: 5em;
+               
             }
             p {
                 font-size: 1.3em;
                 font-family: 'Nunito', sans-serif;
+                @media(max-width: $sm){
+                    font-size: 1em;
+                }
+            }
+            .input-group {
+               input {
+                   border-radius: 20px;
+               }
+               button {
+                   border-radius: 20px;
+               }
+            }
+            button:nth-child(2) {
+                border-radius: 20px;
+                &:hover{
+                    background: transparent;
+                    color: #007bff;
+                    scale: 0;
+                }
+              
             }
         }
     }

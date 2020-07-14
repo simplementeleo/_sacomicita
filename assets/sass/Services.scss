@@ -1,0 +1,58 @@
+@import './Variables.scss';
+
+.triangle {
+    width: 100%;
+    height: 100px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background: #fff;
+}
+
+.services {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: #fff;
+    h1 {
+        color: $color-font-main;
+    }
+
+    img {
+        &.especial{
+            max-width: 600px;
+            width: 50%;
+            height: 100%;
+            @media(max-width: $md){
+                width: 50%;
+            }
+        }
+
+    }
+
+    .items-especial {
+        width: 100%;
+        .item {
+            &:nth-child(2){
+                border-color: rgb(180, 13, 144);
+            }
+            &:nth-child(3){
+                border-color: rgb(13, 180, 21);
+            }
+            &:nth-child(4){
+                border-color: rgb(57, 46, 211);
+            }
+            border: 2px solid red;
+            border-radius: 100px;
+            margin-bottom: 25px;
+            img{
+                width: 20%;
+                padding-right: 10px;
+            }
+            p{
+                margin-bottom: 0;
+                width: 100%;
+                font-size: 1.4em;
+            }
+        }
+    }
+}

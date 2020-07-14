@@ -1,17 +1,95 @@
-/* Error: Undefined variable.
- *    ,
- * 18 |         @media (max-width: $md){
- *    |                            ^^^
- *    '
- *   assets\sass\home.scss 18:28  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 18 \2502          @media (max-width: $md){\d\a    \2502                             ^^^\a    \2575 \a   assets\\sass\\home.scss 18:28  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Nunito:wght@200;700&family=PT+Sans:wght@400;700&display=swap");
+* {
+  transition: all ease-in-out 0.2s;
 }
+
+html {
+  background: red;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "PT Sans", sans-serif;
+  background: #f6fafd;
+}
+body header {
+  height: 100vh;
+  background: #f6fafd;
+  background-image: url("../img/Home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  z-index: 1;
+}
+@media (max-width: 770px) {
+  body header {
+    background-position: center;
+  }
+}
+body header img {
+  position: absolute;
+}
+body header img.point:nth-child(1) {
+  left: 0;
+  top: 50px;
+  width: 10%;
+  opacity: 0.1;
+}
+body header img.point:nth-child(2) {
+  right: 0;
+  width: 20%;
+  bottom: 0;
+}
+body header nav {
+  background: transparent;
+}
+body header nav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Candal", sans-serif;
+  font-weight: bold;
+  color: #0068ff !important;
+}
+body header nav a.btn-register {
+  background: #e6eeff;
+  color: #0068ff !important;
+  border-radius: 40px;
+}
+body header section {
+  margin-top: 100px;
+}
+@media (max-width: 770px) {
+  body header section {
+    margin-top: 20px;
+  }
+}
+body header section h1 {
+  color: #0068ff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 5em;
+}
+body header section p {
+  font-size: 1.3em;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 381px) {
+  body header section p {
+    font-size: 1em;
+  }
+}
+body header section .input-group input {
+  border-radius: 20px;
+}
+body header section .input-group button {
+  border-radius: 20px;
+}
+body header section button:nth-child(2) {
+  border-radius: 20px;
+}
+body header section button:nth-child(2):hover {
+  background: transparent;
+  color: #007bff;
+  scale: 0;
+}
+
+/*# sourceMappingURL=Home.css.map */

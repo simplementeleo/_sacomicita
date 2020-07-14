@@ -1,0 +1,71 @@
+section.weare {
+  position: relative;
+  background: #f6fafd;
+}
+@media (max-width: 292px) {
+  section.weare {
+    margin-top: 50px;
+  }
+}
+section.weare h2 {
+  color: #0068ff;
+}
+section.weare img.avatar {
+  border-radius: 100%;
+  position: absolute;
+  width: 5%;
+  box-shadow: 1px 1px 14px #0066ff8b;
+}
+section.weare img:nth-of-type(1) {
+  width: 80%;
+}
+section.weare img:nth-of-type(2) {
+  position: absolute;
+  left: 0;
+  width: 10%;
+  transform: rotateZ(90deg);
+  opacity: 0.1;
+  top: 10%;
+}
+section.weare img:nth-of-type(3) {
+  position: absolute;
+  width: 13%;
+  transform: rotateZ(90deg);
+  opacity: 0.1;
+  bottom: 30%;
+  right: 5%;
+}
+section.weare img:nth-of-type(4) {
+  top: 12%;
+  left: 14%;
+}
+section.weare img:nth-of-type(5) {
+  top: 40%;
+  left: 28%;
+}
+section.weare img:nth-of-type(6) {
+  top: 14%;
+  left: 36%;
+}
+section.weare img:nth-of-type(7) {
+  top: 28%;
+  left: 48%;
+}
+section.weare img:nth-of-type(8) {
+  top: 9%;
+  left: 60%;
+}
+section.weare img:nth-of-type(9) {
+  top: 34%;
+  left: 70%;
+}
+section.weare img:nth-of-type(10) {
+  top: 12%;
+  left: 77%;
+}
+section.weare img:nth-of-type(11) {
+  top: 50%;
+  left: 75%;
+}
+
+/*# sourceMappingURL=Weare.css.map */
