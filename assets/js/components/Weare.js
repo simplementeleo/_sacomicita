@@ -2,6 +2,9 @@ Vue.component('Weare', {
     template: //html
     `
     <section class="weare">
+       <div class="triangle-main">
+            <div class="triangle"></div>
+       </div>
         <div class="container d-flex flex-column align-items-center">
             <h2 class="text-center mb-3">Nosotros</h2>
             <img v-for="image in images" :src="'./assets/img/'+image.name" :class="[image.class,'mt-5']"

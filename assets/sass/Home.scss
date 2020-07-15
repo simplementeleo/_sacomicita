@@ -13,7 +13,6 @@ body {
 
     header {
         height: 100vh;
-        background: #f6fafd;
         background-image: url('../img/Home.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -46,15 +45,14 @@ body {
                 font-weight: bold;
                 color: $color-font-main !important;
                 &.btn-register{
-                    background: #e6eeff;
+                    background: white;
                     color: $color-font-main !important;
                     border-radius: 40px;
+                    box-shadow: 1px 1px 15px #fff;
                 }
             }
         }
-
         section {
-            // background: #000;
             margin-top: 100px;
             @media (max-width: $md){
                 margin-top: 20px;
@@ -63,10 +61,13 @@ body {
                 color: $color-font-main;
                 font-family: 'PT Sans', sans-serif;
                 font-size: 5em;
-               
+               @media(max-width: $x-sm){
+                   font-size: 2em;
+               }
             }
             p {
                 font-size: 1.3em;
+                color: #4d4949;
                 font-family: 'Nunito', sans-serif;
                 @media(max-width: $sm){
                     font-size: 1em;
@@ -82,12 +83,12 @@ body {
             }
             button:nth-child(2) {
                 border-radius: 20px;
+                background: #1912a5e0;
+                color: white;
                 &:hover{
                     background: transparent;
                     color: #007bff;
-                    scale: 0;
                 }
-              
             }
         }
     }

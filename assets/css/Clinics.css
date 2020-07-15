@@ -1,9 +1,3 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     background: $bg-main-secondary;
- *   |                 ^^^^^^^^^^^^^^^^^^
- *   '
- *   assets\sass\clinics.scss 3:17  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",

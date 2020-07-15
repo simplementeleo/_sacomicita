@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> SacoMiCita </title>
-
+    <!-- sass --watch assets/sass:assets/css -->
     <!-- Development CDN -->
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -14,6 +14,7 @@
     <script src="./assets/js/components/Navigation.js"></script>
     <script src="./assets/js/components/Home.js"></script>
     <script src="./assets/js/components/Weare.js"></script>
+    <script src="./assets/js/components/Services.js"></script>
 
     <!-- Deploy CDN -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -29,21 +30,45 @@
             <Home></Home>
         </header>
         <Weare></Weare>
-        <div class="triangle"></div>
-        <section class="services">
+        <Services></Services>
+        <section class="clinics">
+            <div class="container">
+                <h2 class="text-center py-4">Trabajan con nosotros</h2>
+                <div class="row justify-content-center">
 
-            <h1 class="text-center">Servicios</h1>
-            <div class="container d-flex align-items-center">
-                <img src="./assets/img/especial.png" class="especial" alt="Doctor">
-                <div class="d-flex flex-column justify-content-center items-especial px-3">
-                    <div v-for="(i, index) in 4" class="item d-flex justify-content-around align-items-center px-3 py-2">
-                        <img src="./assets/img/especial/heartbeat.png" alt="">
-                        <p class="text-center">Lorem, ipsum dolor. {{index+1}}</p>
+
+                    <div class="col-md-6 col-sm-12 p-3 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="./assets/img/clinics/montesur.png" class="mx-auto p-4" width="200px"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Montesur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                    quia nisi corporis nemo aliquam!</p>
+                                <a href="#" target="_blank" class="btn btn-block">Solicitar cita</a>
+                            </div>
+                        </div>
                     </div>
+
+
+                    <div class="col-md-6 col-sm-12 p-3 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="./assets/img/clinics/concebir.png" class="mx-auto p-4" width="200px"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Montesur</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                    quia nisi corporis nemo aliquam!</p>
+                                <a href="#" target="_blank" class="btn btn-block">Solicitar cita</a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-
         </section>
+
 
 
 
