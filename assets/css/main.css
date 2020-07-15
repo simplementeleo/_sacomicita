@@ -15,7 +15,6 @@ body {
 }
 body header {
   height: 100vh;
-  background: #f6fafd;
   background-image: url("../img/Home.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,9 +51,10 @@ body header nav a {
   color: #0068ff !important;
 }
 body header nav a.btn-register {
-  background: #e6eeff;
+  background: white;
   color: #0068ff !important;
   border-radius: 40px;
+  box-shadow: 1px 1px 15px #fff;
 }
 body header section {
   margin-top: 100px;
@@ -69,8 +69,14 @@ body header section h1 {
   font-family: "PT Sans", sans-serif;
   font-size: 5em;
 }
+@media (max-width: 292px) {
+  body header section h1 {
+    font-size: 2em;
+  }
+}
 body header section p {
   font-size: 1.3em;
+  color: #4d4949;
   font-family: "Nunito", sans-serif;
 }
 @media (max-width: 381px) {
@@ -86,11 +92,12 @@ body header section .input-group button {
 }
 body header section button:nth-child(2) {
   border-radius: 20px;
+  background: #1912a5e0;
+  color: white;
 }
 body header section button:nth-child(2):hover {
   background: transparent;
   color: #007bff;
-  scale: 0;
 }
 
 section.weare {
@@ -171,47 +178,46 @@ section.weare img:nth-of-type(11) {
 }
 
 .services {
-  position: relative;
   width: 100%;
   height: 100%;
-  z-index: 9999999;
-  background: #fff;
+  background-color: #fff;
 }
 .services h1 {
   color: #0068ff;
 }
 .services img.especial {
   max-width: 600px;
-  width: 50%;
-  height: 100%;
+  width: 100%;
 }
 @media (max-width: 770px) {
   .services img.especial {
     width: 50%;
   }
 }
-.services .items-especial {
-  width: 100%;
+.services .items .item {
+  color: white;
+  padding: 24px 0;
+  font-size: 2em;
 }
-.services .items-especial .item {
-  border: 2px solid red;
-  border-radius: 100px;
-  margin-bottom: 25px;
+.services .items .item:nth-child(1) {
+  border-radius: 10px 10px 0 0;
+  background: red;
 }
-.services .items-especial .item:nth-child(2) {
-  border-color: #b40d90;
+.services .items .item:nth-child(2) {
+  background: #b40d90;
 }
-.services .items-especial .item:nth-child(3) {
-  border-color: #0db415;
+.services .items .item:nth-child(3) {
+  background: #0db415;
 }
-.services .items-especial .item:nth-child(4) {
-  border-color: #392ed3;
+.services .items .item:nth-child(4) {
+  background: #392ed3;
+  border-radius: 0 0 10px 10px;
 }
-.services .items-especial .item img {
+.services .items .item img {
   width: 20%;
   padding-right: 10px;
 }
-.services .items-especial .item p {
+.services .items .item p {
   margin-bottom: 0;
   width: 100%;
   font-size: 1.4em;

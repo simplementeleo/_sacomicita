@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> SacoMiCita </title>
-
+    <!-- sass --watch assets/sass:assets/css -->
     <!-- Development CDN -->
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -33,12 +33,28 @@
         <section class="services">
 
             <h1 class="text-center">Servicios</h1>
-            <div class="container d-flex align-items-center">
-                <img src="./assets/img/especial.png" class="especial" alt="Doctor">
-                <div class="d-flex flex-column justify-content-center items-especial px-3">
-                    <div v-for="(i, index) in 4" class="item d-flex justify-content-around align-items-center px-3 py-2">
-                        <img src="./assets/img/especial/heartbeat.png" alt="">
-                        <p class="text-center">Lorem, ipsum dolor. {{index+1}}</p>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-6 align-self-end">
+                        <img src="./assets/img/especial.png" class="especial" alt="Doctor">
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="items">
+                            <div class="row justify-content-end">
+                                <div class="col-sm-12 text-center item">
+                                    Cardiología
+                                </div>
+                                <div class="col-sm-12 text-center item">
+                                    Ginecología
+                                </div>
+                                <div class="col-sm-12 text-center item">
+                                    Psicología
+                                </div>
+                                <div class="col-sm-12 text-center item">
+                                    Dermatología
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
