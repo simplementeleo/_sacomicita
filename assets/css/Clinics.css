@@ -1,0 +1,16 @@
+section.clinics {
+  background: #000fab;
+}
+section.clinics h2 {
+  color: white;
+}
+section.clinics .card {
+  max-width: 400px;
+}
+section.clinics .card .card-body .btn-block {
+  border-radius: 20px;
+  background: #000fab;
+  color: white;
+}
+
+/*# sourceMappingURL=clinics.css.map */

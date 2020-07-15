@@ -1,15 +1,25 @@
 @import './Variables.scss';
 
 section.weare {
+    .triangle-main{
+        background: $bg-main;
+        .triangle {
+            width: 100%;
+            height: 100px;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            background: $bg-main-secondary;
+        }
+    }
     position: relative;
-    background: $bg-main;
-    @media(max-width: $x-sm){
+    background: $bg-main-secondary;
+
+    @media(max-width: $x-sm) {
         margin-top: 50px;
     }
 
     h2 {
-        color: $color-font-main;
-       
+        color: white;
+
     }
 
     img {
@@ -18,6 +28,7 @@ section.weare {
             position: absolute;
             width: 5%;
             box-shadow: 1px 1px 14px #0066ff8b;
+            margin-top: 50px;
         }
 
         &:nth-of-type(1) {
@@ -44,39 +55,50 @@ section.weare {
 
         // Avatars
         &:nth-of-type(4) {
-            top: 12%;
+            top: 22%;
             left: 14%;
         }
+
         &:nth-of-type(5) {
-            top: 40%;
+            top: 43%;
             left: 28%;
         }
+
         &:nth-of-type(6) {
-            top: 14%;
+            top: 21%;
             left: 36%;
         }
+
         &:nth-of-type(7) {
-            top: 28%;
+            top: 45%;
             left: 48%;
         }
+
         &:nth-of-type(8) {
-            top: 9%;
+            top: 25%;
             left: 60%;
         }
+
         &:nth-of-type(9) {
-            top: 34%;
+            top: 39%;
             left: 70%;
         }
+
         &:nth-of-type(10) {
-            top: 12%;
+            top: 24%;
             left: 77%;
         }
+
         &:nth-of-type(11) {
-            top: 50%;
+            top: 54%;
             left: 75%;
         }
 
     }
-    
-  
+
+    p {
+        color: white;
+    }
+
+
 }

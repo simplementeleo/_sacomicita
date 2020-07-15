@@ -1,59 +1,55 @@
 @import './Variables.scss';
 
-.triangle {
-    width: 100%;
-    height: 100px;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    background: #fff;
+div.triangle-main{
+    background: #000fab;
+    .triangle {
+        width: 100%;
+        height: 100px;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        background: #fff;
+    }
 }
 
 .services {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    h1 {
+
+    h2 {
         color: $color-font-main;
     }
 
     img {
-        &.especial{
+        &.img-e1 {
             max-width: 600px;
             width: 100%;
-            @media(max-width: $md){
+
+            @media(max-width: $md) {
                 width: 50%;
+                display: none;
             }
         }
-
     }
 
     .items {
-        .item {
-            color: white;
-            padding: 24px 0;
-            font-size: 2em;
-            // box-shadow: 1px 1px 10px #000;
-            &:nth-child(1){
-                border-radius: 10px 10px 0 0;
-                background: red;
+        .carousel-item {
+            img {
+                box-shadow: 1px 1px 10px #00000026;
             }
-            &:nth-child(2){
-                background: rgb(180, 13, 144);
-            }
-            &:nth-child(3){
-                background: rgb(13, 180, 21);
-            }
-            &:nth-child(4){
-                background: rgb(57, 46, 211);
-                border-radius: 0 0 10px 10px;
-            }
-            img{
-                width: 20%;
-                padding-right: 10px;
-            }
-            p{
-                margin-bottom: 0;
-                width: 100%;
-                font-size: 1.4em;
+
+            .content {
+                position: absolute;
+                background: #fff;
+                bottom: 0;
+                box-shadow: 1px 1px 10px #00000026;
+                padding: 20px;
+                margin: 20px;
+
+                @media(max-width: 540px) {
+                    padding: 10px;
+                    margin: -20px 5px 5px 5px;
+                    position: relative;
+                }
             }
         }
     }

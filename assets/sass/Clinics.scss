@@ -1,0 +1,18 @@
+@import './Variables.scss';
+section.clinics {
+    background: $bg-main-secondary;
+    h2 {
+        color: white;
+    }
+    .card {
+        max-width: 400px;
+        .card-body {
+            .btn-block{
+                border-radius: 20px;
+                background: $bg-main-secondary;
+                color: white;
+            }
+        }
+    }
+
+}
