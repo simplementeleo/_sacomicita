@@ -12,7 +12,7 @@ Vue.component('Clinics', {
                         <div class="card-body">
                             <h5 class="card-title">{{ clinic.name }}</h5>
                             <p class="card-text">{{ clinic.text }}</p>
-                            <a href="#" target="_blank" class="btn btn-block">Solicitar cita</a>
+                            <a :href="clinic.url" target="_blank" class="btn btn-block">Solicitar cita</a>
                         </div>
                     </div>
                 </div>
@@ -23,8 +23,8 @@ Vue.component('Clinics', {
     data(){
         return {
             clinics: [
-                {duration: '100', logo: 'montesur.png', name: 'Montesur', text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores placeat mollitia excepturi! Similique!'},
-                {duration: '200', logo: 'concebir.png', name: 'Concebir', text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores placeat mollitia excepturi! Similique!'},
+                {url: 'https://www.sacomicita.com/cmontesur', duration: '100', logo: 'montesur.png', name: 'Montesur', text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores placeat mollitia excepturi! Similique!'},
+                {url: 'https://www.sacomicita.com/concebir', duration: '200', logo: 'concebir.png', name: 'Concebir', text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolores placeat mollitia excepturi! Similique!'},
             ]
         }
     }
