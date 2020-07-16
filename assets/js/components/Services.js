@@ -19,7 +19,7 @@ Vue.component('Services', {
 
 
                                             <div v-for="service in services" :class="['carousel-item', service.status]">
-                                                <img class="d-block w-100" :src="'./assets/img/services/'+service.image"
+                                                <img class="d-block w-100" :src="'./assets/img/Services/'+service.image"
                                                     alt="First slide">
                                                 <div class="content">
                                                     <h2 class="text-left">{{service.title}}</h2>
