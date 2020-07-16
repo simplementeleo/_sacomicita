@@ -6,11 +6,16 @@ section.clinics h2 {
 }
 section.clinics .card {
   max-width: 400px;
+  box-shadow: 1px 1px 15px #fff;
+}
+section.clinics .card:hover {
+  transform: translateY(-5px);
 }
 section.clinics .card .card-body .btn-block {
   border-radius: 20px;
   background: #000fab;
   color: white;
+  box-shadow: 1px 1px 15px #000fab66;
 }
 
 /*# sourceMappingURL=Clinics.css.map */

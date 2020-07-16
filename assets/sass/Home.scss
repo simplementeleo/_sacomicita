@@ -1,11 +1,11 @@
 @import './Variables.scss';
 @import './Fonts.scss';
-*{
+
+* {
     transition: all ease-in-out .2s;
 }
-html {
-    background: red;
-}
+
+
 body {
     scroll-behavior: smooth;
     font-family: 'PT Sans', sans-serif;
@@ -18,33 +18,40 @@ body {
         background-repeat: no-repeat;
         background-position: center right;
         z-index: 1;
-        @media (max-width: $md){
+
+        @media (max-width: $md) {
             background-position: center;
         }
+
         img {
             position: absolute;
-            &.point:nth-child(1){
+
+            &.point:nth-child(1) {
                 left: 0;
                 top: 50px;
                 width: 10%;
                 opacity: 0.1;
-                
+
             }
-            &.point:nth-child(2){
+
+            &.point:nth-child(2) {
                 right: 0;
                 width: 20%;
-                bottom: 0; 
+                bottom: 0;
             }
         }
+
         nav {
             background: transparent;
+
             a {
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 font-family: 'Candal', sans-serif;
                 font-weight: bold;
                 color: $color-font-main !important;
-                &.btn-register{
+
+                &.btn-register {
                     background: white;
                     color: $color-font-main !important;
                     border-radius: 40px;
@@ -52,42 +59,60 @@ body {
                 }
             }
         }
+
         section {
             margin-top: 100px;
-            @media (max-width: $md){
+
+            @media (max-width: $md) {
                 margin-top: 20px;
             }
-            h1{
+
+            h1 {
                 color: $color-font-main;
                 font-family: 'PT Sans', sans-serif;
                 font-size: 5em;
-               @media(max-width: $x-sm){
-                   font-size: 2em;
-               }
+
+                @media(max-width: $x-sm) {
+                    font-size: 2em;
+                }
             }
+
             p {
                 font-size: 1.3em;
                 color: #4d4949;
                 font-family: 'Nunito', sans-serif;
-                @media(max-width: $sm){
+
+                @media(max-width: $sm) {
                     font-size: 1em;
                 }
             }
+
             .input-group {
-               input {
-                   border-radius: 20px;
-               }
-               button {
-                   border-radius: 20px;
-               }
+                input {
+                    border-radius: 20px;
+                }
+
+                button {
+                    border-radius: 20px;
+                }
             }
+
             button:nth-child(2) {
                 border-radius: 20px;
                 background: #1912a5e0;
                 color: white;
-                &:hover{
+
+                &:hover {
                     background: transparent;
                     color: #007bff;
+                }
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
         }

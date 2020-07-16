@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/Clinics.scss","../sass/Variables.scss"],"names":[],"mappings":"AACA;EACI,YCDgB;;ADEhB;EACI;;AAEJ;EACI;;AAEI;EACI;EACA,YCVI;EDWJ","file":"Clinics.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/Clinics.scss","../sass/Variables.scss"],"names":[],"mappings":"AACA;EACI,YCDgB;;ADGhB;EACI;;AAEJ;EACI;EACA;;AACA;EACI;;AAGA;EACI;EACA,YCfI;EDgBJ;EACA","file":"Clinics.css"}

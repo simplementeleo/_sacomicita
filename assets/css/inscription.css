@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Nunito:wght@200;700&family=PT+Sans:wght@400;700&display=swap");
+section.inscription {
+  background: #000fab;
+  background-size: cover;
+  background-position: fixed;
+}
+section.inscription h2 {
+  color: #2730b2;
+}
+section.inscription img {
+  border-radius: 10px;
+}
+section.inscription button {
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #867ee3;
+  background: #101345;
+  color: #d1d1dc !important;
+  font-size: 1.4em;
+  font-family: "Candal", sans-serif;
+}
+section.inscription .card {
+  background-color: white;
+  box-shadow: 1px 1px 15px #fff;
+}
+section.inscription .card:hover {
+  transform: translateY(-5px);
+}
+
+/*# sourceMappingURL=inscription.css.map */

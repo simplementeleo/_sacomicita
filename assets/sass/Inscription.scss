@@ -1,0 +1,36 @@
+@import './Fonts.scss';
+
+section.inscription {
+    h2 {
+        color: #2730b2;
+    }
+
+    // background: url('../img/bg-main.jpg') no-repeat;
+    background: #000fab;
+    background-size: cover;
+    background-position: fixed;
+
+    img {
+        border-radius: 10px;
+
+    }
+
+    button {
+        border-radius: 20px;
+        box-shadow: 1px 1px 15px #867ee3;
+        background: #101345;
+        color: #d1d1dc !important;
+        font-size: 1.4em;
+        font-family: 'Candal', sans-serif;
+    }
+
+    .card {
+        background-color: white;
+        box-shadow: 1px 1px 15px #fff;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+}

@@ -10,6 +10,7 @@ section.weare .triangle-main .triangle {
   height: 100px;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   background: #000fab;
+  margin-top: -2px;
 }
 @media (max-width: 292px) {
   section.weare {

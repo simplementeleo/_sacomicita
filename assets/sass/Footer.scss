@@ -1,0 +1,31 @@
+@import './Fonts.scss';
+
+footer {
+    background-color: #161931 !important;
+    background-size: cover;
+
+    h3 {
+        font-family: 'Candal', sans-serif;
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+        &.facebook {
+            color: #2626ff;
+        }
+
+        &.instagram {
+            color: #e13fcf;
+        }
+
+        &.twitter {
+            color: #71baf0;
+        }
+    }
+    .copyright{
+        background: #192c62;
+        color: #9b99a7;;
+    }
+}

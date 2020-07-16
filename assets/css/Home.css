@@ -3,10 +3,6 @@
   transition: all ease-in-out 0.2s;
 }
 
-html {
-  background: red;
-}
-
 body {
   scroll-behavior: smooth;
   font-family: "PT Sans", sans-serif;
@@ -97,6 +93,12 @@ body header section button:nth-child(2) {
 body header section button:nth-child(2):hover {
   background: transparent;
   color: #007bff;
+}
+body header section button:nth-child(2) a {
+  color: white;
+}
+body header section button:nth-child(2) a:hover {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=Home.css.map */

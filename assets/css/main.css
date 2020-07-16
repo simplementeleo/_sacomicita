@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Candal&family=Nunito:wght@200;700&family=PT+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Candal&family=Nunito:wght@200;700&family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Nunito:wght@200;700&family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Nunito:wght@200;700&family=PT+Sans:wght@400;700&display=swap");
 * {
   transition: all ease-in-out 0.2s;
-}
-
-html {
-  background: red;
 }
 
 body {
@@ -99,6 +97,12 @@ body header section button:nth-child(2):hover {
   background: transparent;
   color: #007bff;
 }
+body header section button:nth-child(2) a {
+  color: white;
+}
+body header section button:nth-child(2) a:hover {
+  text-decoration: none;
+}
 
 section.weare {
   position: relative;
@@ -112,6 +116,7 @@ section.weare .triangle-main .triangle {
   height: 100px;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   background: #000fab;
+  margin-top: -2px;
 }
 @media (max-width: 292px) {
   section.weare {
@@ -238,11 +243,127 @@ section.clinics h2 {
 }
 section.clinics .card {
   max-width: 400px;
+  box-shadow: 1px 1px 15px #fff;
+}
+section.clinics .card:hover {
+  transform: translateY(-5px);
 }
 section.clinics .card .card-body .btn-block {
   border-radius: 20px;
   background: #000fab;
   color: white;
+  box-shadow: 1px 1px 15px #000fab66;
+}
+
+section.inscription {
+  background: #000fab;
+  background-size: cover;
+  background-position: fixed;
+}
+section.inscription h2 {
+  color: #2730b2;
+}
+section.inscription img {
+  border-radius: 10px;
+}
+section.inscription button {
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #867ee3;
+  background: #101345;
+  color: #d1d1dc !important;
+  font-size: 1.4em;
+  font-family: "Candal", sans-serif;
+}
+section.inscription .card {
+  background-color: white;
+  box-shadow: 1px 1px 15px #fff;
+}
+section.inscription .card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #161931 !important;
+  background-size: cover;
+}
+footer h3 {
+  font-family: "Candal", sans-serif;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer a.facebook {
+  color: #2626ff;
+}
+footer a.instagram {
+  color: #e13fcf;
+}
+footer a.twitter {
+  color: #71baf0;
+}
+footer .copyright {
+  background: #192c62;
+  color: #9b99a7;
+}
+
+.dialog-show {
+  clip-path: circle(100%);
+  top: 0;
+}
+.dialog-show body {
+  overflow: none;
+}
+
+.dialog-hidden {
+  clip-path: circle(50%);
+  top: -1000%;
+}
+.dialog-hidden body {
+  overflow: auto;
+}
+
+section.form-inscription {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  z-index: 4;
+}
+section.form-inscription .bg-main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("../img/inscription.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+  filter: blur(5px);
+  z-index: -1;
+}
+section.form-inscription .row {
+  height: 100vh;
+}
+section.form-inscription .row .card {
+  border: none;
+  box-shadow: 1px 1px 15px #fff;
+  border-radius: 10px;
+}
+section.form-inscription .row .card .card-body span {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4440bd;
+  position: absolute;
+  top: -10px;
+  right: -7px;
+  font-size: 1.5em;
+}
+section.form-inscription .row .card img {
+  border-radius: 10px 10px 0 0;
+}
+section.form-inscription .row .card button {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

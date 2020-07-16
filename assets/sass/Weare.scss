@@ -8,6 +8,7 @@ section.weare {
             height: 100px;
             clip-path: polygon(100% 0, 0% 100%, 100% 100%);
             background: $bg-main-secondary;
+            margin-top: -2px;
         }
     }
     position: relative;

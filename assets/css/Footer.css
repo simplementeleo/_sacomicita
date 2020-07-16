@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Nunito:wght@200;700&family=PT+Sans:wght@400;700&display=swap");
+footer {
+  background-color: #161931 !important;
+  background-size: cover;
+}
+footer h3 {
+  font-family: "Candal", sans-serif;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer a.facebook {
+  color: #2626ff;
+}
+footer a.instagram {
+  color: #e13fcf;
+}
+footer a.twitter {
+  color: #71baf0;
+}
+footer .copyright {
+  background: #192c62;
+  color: #9b99a7;
+}
+
+/*# sourceMappingURL=Footer.css.map */

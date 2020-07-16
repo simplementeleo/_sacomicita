@@ -4,14 +4,14 @@ Vue.component('Services', {
     <div class="triangle-main">
         <div class="triangle"></div>
         <section class="services">
-            <h2 class="text-center">Servicios</h2>
+            <h2 class="text-center" data-aos="fade" data-aos-anchor-placement="top-center">Servicios</h2>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4 col-sm-6 align-self-end">
-                        <img src="./assets/img/e-1.png" class="img-e1" alt="Doctor">
+                        <img data-aos="zoom-in" data-aos-anchor-placement="top-center" src="./assets/img/e-1.png" class="img-e1" alt="Doctor">
                     </div>
                     <div class="col-md-8 col-sm-12 pb-5">
-                        <div class="items">
+                        <div class="items" data-aos="fade-up-right" data-aos-anchor-placement="top-center">
                             <div class="row justify-content-end">
                                 <div class="col-sm-12 text-center">
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

@@ -13,7 +13,7 @@ Vue.component('Navigation', {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto py-3">
                     <li v-for="item in items" :class="['nav-item', 'active', item.pr]">
-                        <a :class="['nav-link', item.px, item.state ? 'btn-register': '']" href="#">{{ item.name }}</a>
+                        <a :class="['nav-link', item.px, item.state ? 'btn-register': '']" :href="item.url">{{ item.name }}</a>
                     </li>
                 </ul>
             </div>
@@ -23,10 +23,10 @@ Vue.component('Navigation', {
     data(){
         return {
             items: [
-                {state: true, pr: 'pr-5', px: 'px-4', name: 'inscríbete!'},
-                {state: false, pr: 'pr-3', px: '', name: 'inicio'},
-                {state: false, pr: 'pr-3', px: '', name: 'nosotros'},
-                {state: false, pr: 'pr-3', px: '', name: 'servicios'}
+                {url: '#i', state: true, pr: 'pr-5', px: 'px-4', name: 'inscríbete!'},
+                {url: '#h', state: false, pr: 'pr-3', px: '', name: 'inicio'},
+                {url: '#w', state: false, pr: 'pr-3', px: '', name: 'nosotros'},
+                {url: '#s', state: false, pr: 'pr-3', px: '', name: 'servicios'}
             ]
         }
     }
