@@ -2,14 +2,14 @@ Vue.component('Weare', {
     template: //html
     `
     <section class="weare">
-       <div class="triangle-main">
+        <div class="triangle-main">
             <div class="triangle"></div>
-       </div>
+        </div>
         <div class="container d-flex flex-column align-items-center">
             <h2 class="text-center mb-3" data-aos="zoom-in">Nosotros</h2>
             <img v-for="image in images" data-aos="fade-up-right" :data-aos-duration="image.duration" data-aos-anchor-placement="tops-center" :src="'./assets/img/'+image.name" :class="[image.class,'mt-5']"
                 :alt="image.alt">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pb-5">
                 <p data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom" data class="col-md-5 col-sm-12 text-center mt-4 py-4">
                     {{ text }}
                 </p>

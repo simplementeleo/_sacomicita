@@ -4,7 +4,7 @@ Vue.component('Home', {
     <section class="container">
         <div class="row">
             <h1 class="col-sm-12" data-aos="fade-down" data-aos-anchor-placement="top-center">{{ title }}</h1>
-            <p class="col-md-5 col-sm-12 mt-2" data-aos="fade-up" data-aos-anchor-placement="top-center">{{ text }}</p>
+            <p class="col-md-5 col-sm-12 mt-2" data-aos="fade-up">{{ text }}</p>
             <div class="col-md-7"></div>
             <!-- <Search></Search> -->
         </div>

@@ -6,11 +6,12 @@ section.weare .triangle-main {
   background: #f6fafd;
 }
 section.weare .triangle-main .triangle {
+  position: absolute;
   width: 100%;
   height: 100px;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   background: #000fab;
-  margin-top: -2px;
+  margin-top: -99px;
 }
 @media (max-width: 292px) {
   section.weare {
@@ -80,6 +81,7 @@ section.weare img:nth-of-type(11) {
 }
 section.weare p {
   color: white;
+  padding-bottom: 100px;
 }
 
 /*# sourceMappingURL=Weare.css.map */
